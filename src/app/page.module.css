@@ -1,0 +1,1118 @@
+.container {
+  min-height: 100vh;
+  padding: 0px 4rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #1c1c2b;
+  position: relative;
+  z-index: 10;
+  gap: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  flex-shrink: 0;
+  margin-right: auto;
+}
+
+.logo h3 {
+  font-size: 1em;
+  margin: 0px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+.navIcons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navItems {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.3s ease;
+  margin-left: auto;
+}
+
+.navItem {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navItem:hover {
+  color: var(--primary-color);
+}
+
+/* Theme Toggle Button */
+.themeToggle {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.themeToggle:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Menu Button (Burger Icon) */
+.menuButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: white;
+}
+
+.menuButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.burgerIcon {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: currentColor;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+  background-color: currentColor;
+}
+
+.menuButtonActive .burgerIcon:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menuButtonActive .burgerIcon:nth-child(2) {
+  opacity: 0;
+}
+
+.menuButtonActive .burgerIcon:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+.lightNavbar .menuButton {
+  color: #333; /* Dark color for light mode */
+}
+
+.lightNavbar .burgerIcon {
+  background-color: currentColor;
+}
+
+/* Mobile Coming Soon Button */
+.mobileComingSoon {
+  display: none;
+}
+
+.mobileBtnDark {
+  width: 100%;
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.mobileBtnDark:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Banner Styles */
+.banner {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 3rem 2rem;
+  gap: 2rem;
+}
+
+.bannerText {
+  max-width: 600px;
+  width: 100%;
+}
+
+.bannerText h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.gradientText {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bannerText p {
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.bannerButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btnOrange {
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.btnOrange:hover {
+  opacity: 0.9;
+}
+
+.btnDark {
+  background-color: #374151;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnDark:hover {
+  background-color: #4b5563;
+}
+
+.bannerImage .imagePlaceholder {
+  width: 100%;
+  /* max-width: 500px; */
+  height: auto;
+  /* aspect-ratio: 1 / 1; */
+  /* background: linear-gradient(
+    135deg,
+    rgba(255, 102, 0, 0.1) 0%,
+    rgba(154, 245, 10, 0.1) 100%
+  ); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  font-size: 1rem;
+  color: #888;
+  /* border: 1px solid rgba(255, 102, 0, 0.3); */
+  flex-direction: column;
+}
+
+/* Trust Badges */
+.trustBadges {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.trustBadges span {
+  font-size: 0.85rem;
+  background: rgba(255, 102, 0, 0.1);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 102, 0, 0.3);
+  white-space: nowrap;
+}
+
+.chatPreview {
+  font-size: 1rem;
+  /* margin-top: 1rem; */
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 470px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Features Section */
+.features {
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #0d0f1b 0%, #131626 100%);
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 48px;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.featureCard {
+  background: rgba(28, 31, 42, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 32px 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+}
+
+.featureIcon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.featureCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: var(--secondary-color);
+}
+
+.featureCard p {
+  color: #b5b0bc;
+  line-height: 1.6;
+}
+
+/* Waitlist Section */
+.waitlist {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #131626 0%, #0d0f1b 100%);
+  text-align: center;
+}
+
+.waitlistContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.waitlistContainer h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.waitlistContainer p {
+  color: #b5b0bc;
+  margin-bottom: 32px;
+}
+
+.waitlistForm {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.emailInput {
+  flex: 1;
+  min-width: 250px;
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+}
+
+.emailInput:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.submitButton {
+  padding: 14px 32px;
+  background: var(--primary-gradient);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.submitButton:hover {
+  opacity: 0.9;
+}
+
+.submitButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  padding: 16px;
+  background: rgba(154, 245, 10, 0.1);
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  color: var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: #b5b0bc;
+}
+
+/* Philosophy Section */
+.philosophy {
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #0d0f1b 0%, #131626 100%);
+}
+
+.philosophyContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.philosophy h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.philosophySubhead {
+  text-align: center;
+  color: #b5b0bc;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.philosophyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.philosophyCard {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(28, 31, 42, 0.4);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.philosophyCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+}
+
+.philosophyIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.philosophyCard h3 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.philosophyCard p {
+  color: #b5b0bc;
+  line-height: 1.6;
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+  padding: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modalContent {
+  background: linear-gradient(135deg, #131626 0%, #0d0f1b 100%);
+  border: 1px solid rgba(255, 102, 0, 0.3);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 550px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideUp 0.3s ease;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modalClose {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #b5b0bc;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  line-height: 1;
+}
+
+.modalClose:hover {
+  color: var(--primary-color);
+}
+
+.modalTitle {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.modalSubtitle {
+  color: #b5b0bc;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formLabel {
+  color: #ccc;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.formInput,
+.formSelect,
+.formTextarea {
+  background: rgba(28, 31, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: white;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.formInput:focus,
+.formSelect:focus,
+.formTextarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background: rgba(28, 31, 42, 1);
+}
+
+.formInput::placeholder,
+.formTextarea::placeholder {
+  color: #666;
+}
+
+.formTextarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.formNote {
+  font-size: 0.75rem;
+  color: #888;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Light Mode Styles */
+.lightContainer {
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+}
+
+.lightNavbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.lightNavbar .logo {
+  color: #1a1a1a;
+}
+
+.lightNavbar .navItem {
+  color: #333;
+}
+
+.lightNavbar .navItem:hover {
+  color: var(--primary-color);
+}
+
+.lightBanner {
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+}
+
+.lightBanner .bannerText p {
+  color: #666;
+}
+
+.lightBanner .trustBadges span {
+  background: rgba(255, 102, 0, 0.1);
+  border-color: rgba(255, 102, 0, 0.3);
+  color: #333;
+}
+
+.lightPhilosophy {
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+}
+
+.lightFeatures {
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+}
+
+.lightWaitlist {
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+}
+
+.lightCard {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.lightCard h3 {
+  color: var(--primary-color);
+}
+
+.lightCard p {
+  color: #666;
+}
+
+.lightFooter {
+  border-top: 1px solid #e0e0e0;
+  color: #666;
+}
+
+.lightModal {
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+  border: 1px solid rgba(255, 102, 0, 0.3);
+}
+
+.lightModal .formInput,
+.lightModal .formSelect,
+.lightModal .formTextarea {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.lightModal .formLabel {
+  color: #666;
+}
+
+.lightModal .modalSubtitle {
+  color: #888;
+}
+
+.lightModal .formNote {
+  color: #999;
+}
+
+.lightNavbar .navItems {
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+  border-left: 1px solid rgba(255, 102, 0, 0.3);
+}
+
+.lightNavbar .navItem {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.lightNavbar .mobileComingSoon {
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+.lightNavbar .mobileBtnDark {
+  background: var(--primary-gradient);
+  color: white;
+}
+
+/* Scrollbar styling */
+.modalContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modalContent::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.modalContent::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+/* Prevent body scroll when mobile menu is open */
+body.menuOpen {
+  overflow: hidden;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0px 2rem;
+  }
+  .lightBanner .chatPreview {
+    color: #666;
+    background-color: #0000000d;
+  }
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  /* Hide desktop Coming Soon button on mobile/tablet */
+  .navIcons .btnDark {
+    display: none !important;
+  }
+
+  /* Show mobile Coming Soon button in menu */
+  .mobileComingSoon {
+    display: block;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    list-style: none;
+  }
+
+  .navItems {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    background: linear-gradient(135deg, #131626 0%, #0d0f1b 100%);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 80px 2rem 2rem 2rem;
+    gap: 1.5rem;
+    transition: right 0.3s ease;
+    z-index: 99;
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(255, 102, 0, 0.3);
+    overflow-y: auto;
+    margin-left: 0;
+  }
+
+  .navItemsOpen {
+    right: 0;
+  }
+
+  .navItem {
+    font-size: 1.1rem;
+    padding: 0.75rem 0;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navItem:hover {
+    padding-left: 10px;
+  }
+
+  .bannerText h1 {
+    font-size: 2.5rem;
+  }
+
+  .features h2,
+  .philosophy h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0px 1rem;
+  }
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  .themeToggle {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .menuButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .burgerIcon {
+    width: 20px;
+  }
+
+  .banner {
+    flex-direction: column;
+    /* padding: 2rem 1rem; */
+    text-align: center;
+  }
+
+  .bannerText {
+    max-width: 100%;
+  }
+
+  .bannerText h1 {
+    font-size: 2rem;
+  }
+
+  .bannerText p {
+    font-size: 1rem;
+  }
+
+  .bannerButtons {
+    justify-content: center;
+  }
+
+  .trustBadges {
+    justify-content: center;
+  }
+
+  .trustBadges span {
+    font-size: 0.7rem;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .bannerImage {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bannerImage .imagePlaceholder {
+    max-width: 250px;
+  }
+
+  .chatPreview {
+    display: none;
+  }
+
+  .features,
+  .philosophy {
+    padding: 60px 20px;
+  }
+
+  .features h2,
+  .philosophy h2 {
+    font-size: 2rem;
+  }
+
+  .philosophySubhead {
+    font-size: 1rem;
+  }
+
+  .featuresGrid,
+  .philosophyGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .waitlistForm {
+    flex-direction: column;
+  }
+
+  .emailInput {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+
+  .modalContent {
+    padding: 1.5rem;
+    width: 95%;
+    max-height: 90vh;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .modalTitle {
+    font-size: 1.5rem;
+  }
+
+  .navItems {
+    width: 280px;
+    padding: 70px 1.5rem 1.5rem 1.5rem;
+  }
+  .lightBanner .chatPreview {
+    color: #666;
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 480px) {
+  .bannerText h1 {
+    font-size: 1.75rem;
+  }
+  .lightBanner .chatPreview {
+    color: #666;
+    background-color: transparent;
+  }
+
+  .features h2,
+  .philosophy h2 {
+    font-size: 1.75rem;
+  }
+
+  .btnOrange,
+  .btnDark {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .featureCard,
+  .philosophyCard {
+    padding: 1.5rem;
+  }
+
+  .featureIcon,
+  .philosophyIcon {
+    font-size: 2.5rem;
+  }
+
+  .featureCard h3,
+  .philosophyCard h3 {
+    font-size: 1.2rem;
+  }
+
+  .trustBadges {
+    gap: 0.5rem;
+  }
+
+  .trustBadges span {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .modalContent {
+    padding: 1.25rem;
+  }
+
+  .modalTitle {
+    font-size: 1.3rem;
+  }
+
+  .modalSubtitle {
+    font-size: 0.8rem;
+  }
+
+  .formLabel {
+    font-size: 0.8rem;
+  }
+
+  .formInput,
+  .formSelect,
+  .formTextarea {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .footer {
+    padding: 20px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .bannerText h1 {
+    font-size: 1.5rem;
+  }
+
+  .navItems {
+    gap: 0.75rem;
+  }
+
+  .navItem {
+    font-size: 0.85rem;
+  }
+
+  .btnOrange,
+  .btnDark {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .themeToggle {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .container {
+    padding: 0px 8rem;
+  }
+
+  .menuButton {
+    display: none !important;
+  }
+  .lightBanner .chatPreview {
+    color: #666;
+    background-color: transparent;
+  }
+
+  /* Hide mobile Coming Soon button on desktop */
+  .mobileComingSoon {
+    display: none !important;
+  }
+
+  /* Ensure desktop button is visible */
+  .navIcons .btnDark {
+    display: block;
+  }
+
+  .banner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 4rem 2rem; */
+  }
+
+  .bannerText h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    padding: 0px 12rem;
+  }
+
+  .bannerText h1 {
+    font-size: 4rem;
+  }
+
+  .featuresGrid,
+  .philosophyGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Print styles */
+@media print {
+  .navbar,
+  .bannerButtons,
+  .waitlist,
+  .themeToggle,
+  .modalOverlay {
+    display: none;
+  }
+
+  .container {
+    padding: 0;
+    color: black;
+  }
+
+  .features,
+  .philosophy {
+    background: white;
+    color: black;
+  }
+}
