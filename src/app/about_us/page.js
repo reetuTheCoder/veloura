@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Page() {
   return (
-    <section className="about-us">
+    <section
+      className="about-us"
+      style={{ paddingTop: "100x", minHeight: "65vh" }}
+    >
       <div className="container">
         <h1>About Us</h1>
 

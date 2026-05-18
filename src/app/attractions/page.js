@@ -109,7 +109,7 @@ export default function AttractionsPage() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
         {/* Hero Section */}
         <section className="attractions-hero-new">
@@ -201,7 +201,7 @@ export default function AttractionsPage() {
         </div>
       )}
       
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

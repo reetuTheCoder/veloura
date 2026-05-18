@@ -125,7 +125,7 @@ export default function RoomsPage() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
         {/* Hero Section */}
         <section className="rooms-page-hero">
@@ -223,7 +223,7 @@ export default function RoomsPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

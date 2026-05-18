@@ -20,7 +20,7 @@ export default function OffersPage() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
         <section className="page-hero offers-hero">
           <div className="hero-overlay">
@@ -52,7 +52,7 @@ export default function OffersPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

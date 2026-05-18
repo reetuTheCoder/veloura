@@ -99,7 +99,7 @@ export default function AmenitiesPage() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
         {/* Hero Slider Section */}
         <div className="m-hero--slide hero-slider-wrapper">
@@ -436,7 +436,7 @@ export default function AmenitiesPage() {
         </section>
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

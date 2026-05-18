@@ -7,7 +7,7 @@ import ReservationWidget from '../components/ReservationWidget';
 export default function DiningPage() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
         <section className="page-hero dining-hero">
           <div className="hero-overlay">
@@ -41,7 +41,7 @@ export default function DiningPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

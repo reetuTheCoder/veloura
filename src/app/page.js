@@ -13,7 +13,7 @@ import TermsNcond from './components/TermsNcond';
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       {/* <Hero /> */}
       <RoomsSection />
       {/* <OffersSection /> */}
@@ -21,7 +21,7 @@ export default function Home() {
       {/* <EventsSection /> */}
       <LocationSection />
       {/* <TermsNcond /> */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

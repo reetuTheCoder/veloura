@@ -58,7 +58,7 @@ export default function GalleryPage() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
         {/* Hero Section */}
         <section className="gallery-page-hero">
@@ -176,7 +176,7 @@ export default function GalleryPage() {
         </div>
       )}
       
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
