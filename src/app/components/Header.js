@@ -20,6 +20,7 @@ export default function Header() {
           <Link href="/amenities">Amenities</Link>
           <Link href="/gallery">Gallery</Link>
           <Link href="/attractions">Attractions</Link>
+          <Link href="/about_us">About Us</Link>
           <button onClick={handleBookNow} className="book-btn">
             BOOK NOW
           </button>

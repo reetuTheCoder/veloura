@@ -7,7 +7,7 @@ export default function TermsNcond() {
 
       <p>
         All material found in the pages of this Website is protected under the
-        copyright laws of India. Certain names, words, titles, phrases, logos,
+        copyright laws of Usa. Certain names, words, titles, phrases, logos,
         icons, graphics or designs in the pages of this Website may constitute
         trade-names, trade-marks or service marks of Veloura or its
         affiliates, or Veloura or its affiliates may have been licensed to
@@ -162,7 +162,7 @@ export default function TermsNcond() {
       <h2>GENERAL</h2>
 
       <p>
-        This agreement is governed by the laws of India, without regard to its
+        This agreement is governed by the laws of Usa, without regard to its
         conflicts of law principles. If any dispute arises between you and the
         Company during your use of the Site or thereafter, in connection with
         and arising from your use or attempt to use this Site, the place of
@@ -172,9 +172,9 @@ export default function TermsNcond() {
 
       <p>
         These terms and conditions are governed by and shall be construed in
-        accordance with the laws of the Republic of India and any dispute shall
+        accordance with the laws of of Usa and any dispute shall
         exclusively be subject to the jurisdiction of the appropriate Courts
-        situated at Faridabad, Haryana, India.
+        situated at West Hollywood, Usa.
       </p>
 
       <h2>CANCELLATION POLICY OF CONFIRMED BOOKINGS</h2>

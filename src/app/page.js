@@ -14,13 +14,13 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Hero />
+      {/* <Hero /> */}
       <RoomsSection />
-      <OffersSection />
-      <DiningSection />
-      <EventsSection />
+      {/* <OffersSection /> */}
+      {/* <DiningSection /> */}
+      {/* <EventsSection /> */}
       <LocationSection />
-      <TermsNcond />
+      {/* <TermsNcond /> */}
       <Footer />
     </>
   );
