@@ -19,7 +19,7 @@ export default function Home() {
       {/* <OffersSection /> */}
       {/* <DiningSection /> */}
       {/* <EventsSection /> */}
-      <LocationSection />
+      {/* <LocationSection /> */}
       {/* <TermsNcond /> */}
       {/* <Footer /> */}
     </>

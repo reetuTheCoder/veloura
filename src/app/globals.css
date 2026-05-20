@@ -121,15 +121,17 @@ body {
 .btn {
   display: inline-block;
   padding: 12px 32px;
-  background: transparent;
+  background: #eaeaeae8;
   border: 2px solid white;
-  color: white;
+  color: #1a1a1a;
   text-decoration: none;
   letter-spacing: 2px;
   font-size: 14px;
   font-weight: 500;
   transition: all 0.3s;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 .btn:hover {
@@ -807,10 +809,10 @@ body {
 
   padding: 14px 36px;
 
-  background: transparent;
-  border: 2px solid white;
+  /* background: transparent; */
+  /* border: 2px solid white; */
 
-  color: white;
+  color: #1a1a1a;
 
   text-decoration: none;
 
